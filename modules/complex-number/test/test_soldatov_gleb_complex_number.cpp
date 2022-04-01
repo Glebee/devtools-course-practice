@@ -11,6 +11,7 @@ TEST(Soldatov_Gleb_ComplexNumberTest, Complex_Number_Create_Zero) {
     EXPECT_EQ(re, z.getRe());
     EXPECT_EQ(im, z.getIm());
 }
+
 TEST(Soldatov_Gleb_ComplexNumberTest, Complex_Number_Addition) {
     ComplexNumber re(7, 10);
     ComplexNumber im(3, 7);
