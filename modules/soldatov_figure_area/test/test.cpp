@@ -26,7 +26,7 @@ TEST(soldatov_area, can_create_zeroes2) {
     ASSERT_NO_THROW(figureArea(0, 0, 0));
 }
 TEST(soldatov_area, area_ball) {
-    double x = 5.0	;
+    double x = 5.0;
     figureArea ball(x);
     double areaBall = ball.ballArea();
     ASSERT_DOUBLE_EQ(areaBall, PI * x * x);
