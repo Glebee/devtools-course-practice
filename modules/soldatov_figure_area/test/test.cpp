@@ -46,7 +46,7 @@ TEST(soldatov_area, area_rectangle) {
 	x = y = z = 7.0;
 	figureArea rectangle(x, y, z);
 	double areaRec = rectangle.rectangleArea();
-	ASSERT_DOUBLE_EQ(areaRec, (2.0 * x * y) + (2.0 * x * z) + (2.0 * y * z);
+	ASSERT_DOUBLE_EQ(areaRec, (2.0 * x * y) + (2.0 * x * z) + (2.0 * y * z));
 }
 TEST(soldatov_area, neg_area_rectangle) {
 	double x, y, z;
