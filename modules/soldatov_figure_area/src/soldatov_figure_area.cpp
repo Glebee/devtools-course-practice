@@ -23,7 +23,7 @@ double figureArea::ballArea() {
     if (a <= 0.0) {
         throw std::invalid_argument("invalid parameter");
     } else {
-        return (PI * a * a);
+        return (4 * PI * a * a);
     }
 }
 
