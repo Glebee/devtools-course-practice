@@ -29,7 +29,7 @@ TEST(soldatov_area, area_ball) {
     double x = 5.0;
     figureArea ball(x);
     double areaBall = ball.ballArea();
-    ASSERT_DOUBLE_EQ(areaBall, PI * x * x);
+    ASSERT_DOUBLE_EQ(areaBall, 4 * PI * x * x);
 }
 TEST(soldatov_area, neg_area_ball) {
     double x = -4;
