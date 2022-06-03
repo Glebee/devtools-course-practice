@@ -23,7 +23,7 @@ bool combinations_App::validateNumberOfArguments(int argc, const char** argv) {
         help(argv[0]);
         return false;
     }
-    else if (argc != 2) {
+    else if (argc != 3) {
         help(argv[0], "ERROR: Should be 2 arguments.\n\n");
         return false;
     }
@@ -62,7 +62,7 @@ std::string combinations_App::operator()(int argc, const char** argv) {
     combinations cmb(arguments[0], arguments[1]);
     try {
         result = cmb.get_cnm();
-        stream << "Amount of combinations";
+        stream << "Amount of combinations = ";
         }
     catch (std::invalid_argument const& ex) {
         stream << "ERROR: " << ex.what() << "\n";
