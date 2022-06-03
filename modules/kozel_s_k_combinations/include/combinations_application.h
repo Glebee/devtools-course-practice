@@ -12,11 +12,11 @@
 #include "include/combinations.h"
 
 class combinations_App {
-public:
+ public:
     combinations_App();
     std::string operator()(int argc, const char** argv);
 
-private:
+ private:
     void help(const char* appname, const char* message = "");
     bool validateNumberOfArguments(int argc, const char** argv);
     double parseDouble(const char* arg);
